@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="not <= 0.049\ngini = 0.27\nsamples = 43008\nvalue = [6926, 36082]"] ;
+1 [label="disappointed <= 0.026\ngini = 0.2\nsamples = 28905\nvalue = [3265, 25640]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="worst <= 0.075\ngini = 0.19\nsamples = 28394\nvalue = [3013, 25381]"] ;
+1 -> 2 ;
+3 [label="gini = 0.184\nsamples = 28252\nvalue = [2899, 25353]"] ;
+2 -> 3 ;
+4 [label="gini = 0.317\nsamples = 142\nvalue = [114, 28]"] ;
+2 -> 4 ;
+5 [label="not disappointed <= 0.019\ngini = 0.5\nsamples = 511\nvalue = [252, 259]"] ;
+1 -> 5 ;
+6 [label="gini = 0.486\nsamples = 431\nvalue = [252, 179]"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 80\nvalue = [0, 80]"] ;
+5 -> 7 ;
+8 [label="great <= 0.014\ngini = 0.384\nsamples = 14103\nvalue = [3661, 10442]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="not buy <= 0.049\ngini = 0.422\nsamples = 11045\nvalue = [3335, 7710]"] ;
+8 -> 9 ;
+10 [label="gini = 0.409\nsamples = 10656\nvalue = [3056, 7600]"] ;
+9 -> 10 ;
+11 [label="gini = 0.406\nsamples = 389\nvalue = [279, 110]"] ;
+9 -> 11 ;
+12 [label="not great <= 0.072\ngini = 0.19\nsamples = 3058\nvalue = [326, 2732]"] ;
+8 -> 12 ;
+13 [label="gini = 0.167\nsamples = 2911\nvalue = [267, 2644]"] ;
+12 -> 13 ;
+14 [label="gini = 0.481\nsamples = 147\nvalue = [59, 88]"] ;
+12 -> 14 ;
+}

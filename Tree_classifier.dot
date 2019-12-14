@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="not <= 0.5\ngini = 0.27\nsamples = 43008\nvalue = [6926, 36082]"] ;
+1 [label="disappointed <= 0.5\ngini = 0.159\nsamples = 19530\nvalue = [1697, 17833]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="awful <= 0.5\ngini = 0.151\nsamples = 19332\nvalue = [1589, 17743]"] ;
+1 -> 2 ;
+3 [label="gini = 0.147\nsamples = 19270\nvalue = [1537, 17733]"] ;
+2 -> 3 ;
+4 [label="gini = 0.271\nsamples = 62\nvalue = [52, 10]"] ;
+2 -> 4 ;
+5 [label="gini = 0.496\nsamples = 198\nvalue = [108, 90]"] ;
+1 -> 5 ;
+6 [label="great <= 0.5\ngini = 0.346\nsamples = 23478\nvalue = [5229, 18249]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="money <= 0.5\ngini = 0.387\nsamples = 18021\nvalue = [4727, 13294]"] ;
+6 -> 7 ;
+8 [label="gini = 0.374\nsamples = 17295\nvalue = [4309, 12986]"] ;
+7 -> 8 ;
+9 [label="gini = 0.489\nsamples = 726\nvalue = [418, 308]"] ;
+7 -> 9 ;
+10 [label="unfortunately <= 0.5\ngini = 0.167\nsamples = 5457\nvalue = [502, 4955]"] ;
+6 -> 10 ;
+11 [label="gini = 0.158\nsamples = 5363\nvalue = [465, 4898]"] ;
+10 -> 11 ;
+12 [label="gini = 0.477\nsamples = 94\nvalue = [37, 57]"] ;
+10 -> 12 ;
+}
